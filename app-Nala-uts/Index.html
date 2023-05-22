@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <div> 
+    <h2>POLITEKNIK BALEKAMBANG JEPARA</h2>
+    <h2>Prodi Rekayasa Perangkat Lunak</h2>
+  </div>
+    <link rel="stylesheet" href="uts.css">
+</head>
+<body> 
+  <div class="a">
+    <img src="logo.png" title="Polibang">
+    <br>
+  </div>
+
+
+<fieldset><h1> Nilai Matkul Mahasiswa</h1>
+  <form id="reset">
+        <div class="kotak">
+          <div>
+            <li><span>NIM Mahasiswa :</span>
+          </div>
+          
+            <input type="number" id="NIM">
+          
+          <div>
+            <li><span>Nama Mahasiswa :</span></li>
+            </div>
+            
+              <input type="text" id="Nama"></input>
+            
+            <div>
+            <li><span>Mata Kuliah :</span></li>
+            </div>
+            
+            <select type="" id="MataKuliah">
+              <option value="Matkul 1 = Pendidikan Pancasila">Pendidikan Pancasila</option>;
+              <option value="Matkul 2 = Praktik Pemrograman Komputer2">Praktik Pemrograman Komputer2</option>;
+              <option value="Matkul 3 = Arsitektur Komputer">Arsitektur Komputer</option>;
+              <option value="Matkul 4 = Indonesia">Indonesia</option>;
+              <option value="Matkul 5 = Desain Perangkat Lunak">Desain Perangkat Lunak</option>;
+              <option value="Matkul 6 = Struktur Data dan Algoritma">Struktur Data dan Algoritma</option>;
+              <option value="Matkul 7 = Komputer2">Komputer2</option>;
+              <option value="Matkul 8 = Kalkulus2">Kalkulus2</option>;
+              <option value="Matkul 9 = Diskrit1">Diskrit1</option>;
+              <option value="Matkul 10 = Sistem Operasi">Sistem Operasi</option>;
+            </select>
+          
+          <div>
+            <li><span>Nilai Akhir :</span></li>
+          </div>
+          
+            <input type="number" id="NilaiAkhir" step="0.1" min="0" max="100" required></input>
+        
+          
+        </form>
+  </div>
+  <div class="tombol">
+      <button onclick="tampil()">TAMPIL</button>
+      <button onclick="Reset() " >RESET</button>
+      
+    </div><br><hr color="black">
+
+    <div id="tampilan" class="tampilan"></div>
+   
+
+      <div id="ulang"></div>
+      </fieldset>
+  <div class="pilih">
+    <div class="array"><a href="array.html">ARRAY</a></div>
+    <div class="biodata"><a href="biodata.html">BIODATA</a></div>
+</div>
+    <script src="uts.js"></script>
+
+      </body>
+</html>
