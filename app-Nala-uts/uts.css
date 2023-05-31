@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(245, 185, 18);
+padding: 5px;
+text-align: left;
+position: sticky;
+top: 0;
+overflow: auto;
+text-align: center;
+}
+.tampilan { 
+    text-align: left;
+}
+fieldset {
+    margin: 20px auto;
+    background-color: rgb(32, 166, 41) ; margin: auto;
+    height: auto;
+    width: 500px;
+    border: solid rgb(87, 65, 65);
+}
+.tombol {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-gap: 50%;
+
+}
+.tampilan {
+    margin-top: 20px;
+    display:grid;
+    
+    justify-content: center;
+}
+.pilih {
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto ;
+    grid-gap: 320px;
+    justify-content: center;
+}
+
+.pilih > div {
+    background-color: rgb(32, 166, 41);
+    border: solid 2px rgb(12, 10, 10);
+}
+.sm {
+    display: grid;
+    grid-template-columns: 180px 180px 180px  ;
+    justify-content: center;
+}
+.kotak  { 
+    padding: 2px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    text-align: left;
+    margin: 40px auto;
+    
+}
+.kotak > div , input, select {
+    margin: 5px;
+    padding: 5px;
+}
+
+.a {
+    margin: 20px;;
+}
+a {
+    color: white;
+}

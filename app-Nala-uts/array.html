@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="uts.css">
+</head>
+<body>
+   <fieldset>
+  <h1>Data Array</h1>
+
+  <div id="data"></div>
+  <script>
+    var Nama = ["Zainal Arifin"];
+    var TahunLahir = [2004];
+    var NoHP = ["08127331723"];
+
+    function tampilkanData() {
+      var dataDiv = document.getElementById('data');
+      var output = '';
+
+      for (var i = 0; i < Nama.length; i++) {
+        output += '<p>Nama: ' + Nama[i] + '</p>';
+        output += '<p>Tahun Lahir: ' + TahunLahir[i] + '</p>';
+        output += '<p>No. HP: ' + NoHP[i] + '</p>';
+        output += '<hr color="black">';
+      }
+
+      dataDiv.innerHTML = output;
+    }
+
+    function tambahData() {
+      var namaBaru = prompt("Masukkan Nama:");
+      var tahunLahirBaru = parseInt(prompt("Masukkan Tahun Lahir:"));
+      var noHPBaru = prompt("Masukkan No. HP:");
+
+      Nama.push(namaBaru);
+      TahunLahir.push(tahunLahirBaru);
+      NoHP.push(noHPBaru);
+
+      tampilkanData();
+    }
+
+    function hapusData() {
+      var index = parseInt(prompt("Masukkan index data yang ingin dihapus (0 - " + (Nama.length - 1) + "):"));
+
+      if (index >= 0 && index < Nama.length) {
+        Nama.splice(index, 1);
+        TahunLahir.splice(index, 1);
+        NoHP.splice(index, 1);
+        tampilkanData();
+      } else {
+        alert("Index tidak valid!");
+      }
+    }
+    </script>
+    <button onclick="tampilkanData()">Tampilkan Data</button>
+    <button onclick="tambahData()">Tambah Data</button>
+    <button onclick="hapusData()">Hapus Data</button>
+    </fieldset>
+    <body>
+</div>
+<div class="pilih">
+    <div class="home"><a href="index.html">HOME</a></div>
+    <div class="biodata"><a href="biodata.html">BIODATA</a></div>
+</div>
+    </body>
+    
+</body>
+</html>
