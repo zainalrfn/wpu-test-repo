@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(40, 240, 223);
+padding: 5px;
+text-align: left;
+position: sticky;
+top: 0;
+overflow: auto;
+text-align: center;
+}
+fieldset {
+    margin: 20px auto;
+    background-color: rgb(40, 240, 223) ; margin: auto;
+    height: auto;
+    width: 500px;
+    border: solid rgb(8, 8, 8);
+}
